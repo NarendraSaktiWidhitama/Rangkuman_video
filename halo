@@ -1,0 +1,22 @@
+React Tailwind-v4
+
+tailwind itu merupakan komponen tambahan buat mempermudah kita dalam css. kalau biasanya untuk membuat tampilan website
+pake css
+
+TUTORIAL SIMPEL
+-instal node.js kalau belum ada dipc
+-masuk ke file explore dan ketik (cmd)
+-kemudia ketik npm create vite@latest
+-kemudian itu pilih create vite
+-namakan projek
+-select a framwork pilih (react)
+-terus pilih (Javascript)
+-tulis cd(nama file kamu)
+-ketik code .
+-habis itu kalau udah masuk ke vsc langsung ketik (npm instal)
+-terus kalau udah ketik (npm run dev)
+-hapus (app.css, sama folder assets yang isinya react.svg)
+-ke file vite.config.js ketik di bagian atas baris 3 (import tailwindcss from '@tailwindcss/vite')
+-ke index.css dan app.jsx dan hapus semua isinya
+-lalu ketik (rafce) di app.jsx
+

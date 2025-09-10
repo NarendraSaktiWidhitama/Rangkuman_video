@@ -1,0 +1,32 @@
+Jadi setelah aku menonton video yang menjelaskan mengenai tailwind.tailwind merupakan kerangka kerja css yang mempermudahkan
+kita dalam mengerjakan css tanpa perlu manial.serta dijelaskan kerangka kerjanya sama tutorial urut dari awal.kalau kalian
+mau aku akan buatkan langkah langkah tutorial seperti divideo.
+
+TUTORIAL SIMPEL
+-instal node.js kalau belum ada dipc
+-masuk ke file explore dan ketik (cmd)
+-kemudia ketik npm create vite@latest
+-kemudian itu pilih create vite
+-namakan projek
+-select a framwork pilih (react)
+-terus pilih (Javascript)
+-tulis cd(nama file kamu)
+-ketik code .
+-habis itu kalau udah masuk ke vsc langsung ketik (npm instal)
+-terus kalau udah ketik (npm run dev)
+-hapus (app.css, sama folder assets yang isinya react.svg)
+-ke file vite.config.js ketik di bagian atas baris 3 (import tailwindcss from '@tailwindcss/vite')
+-ke index.css dan app.jsx dan hapus semua isinya
+-lalu ketik (rafce) di app.jsx
+ini untuk tutorialku jadi ini yang simpelnya biar teman teman bisa mengerti dan tidak bingung ya.
+
+oke jadi ini setelah saya menonton videonya tadi lumayan seru membuat kartu dengan cara
+ke:-tailwind-klik bagian cards
+   -copy codingan yang ada diwebsite html to jsx
+   -pastikan copy code yang dijadikan jsx biar muncul
+   -paste di app.jsx
+
+walaupun tadi sebenarnya juga susah dan tidak muncul diwebnya soalnya belum ketik
+(npm install tailwindcss @tailwindcss/vite)ini jadi belum tau karna lupa jadi intinya teman teman tetap
+belajar coding semua susah tapi kalau dasarnya senang pasti asik menjalaninya.tetap semangat
+

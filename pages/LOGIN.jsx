@@ -62,4 +62,4 @@ function LoginPage() {
     );
 }
 
-export default App
+export default LoginPage

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 function Editdata() {
     const { id } = useParams();
@@ -38,8 +39,12 @@ function Editdata() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/menu/${id}`,formData);
-                // alert("Data berhasil diubah!");
+            await axios.put(`http://localhost:5000/menu/${id}`,formData)
+            Swal.fire({
+                title: "Selamat yah!",
+                icon: "berhasil",
+                draggable: true
+            });
                 navigate("/tabeldata")
         } catch (err) {
             console.error("Gagal mengupdate data:", err);

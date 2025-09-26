@@ -16,6 +16,10 @@ const Sidnav = () => {
                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Tabeldata</a>
                 <a href="/Editdata/:id" 
                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Editdata</a>
+                <div className='pt-70'>
+                <a href="/Editdata/:id" 
+                className='block py-2 px-3 rounded hover:bg-red-600 focus:shadow-outline text-white font-bold text-center'>LogOut</a>
+                </div>
             </nav>
 
             <div className=''>

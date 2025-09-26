@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 function TabelData() {
     const [data, setData] = useState([]);
@@ -28,7 +29,23 @@ function TabelData() {
 
         try {
             await axios.delete(`http://localhost:5000/menu/${id}`);
-            alert("Data berhasil dihapus");
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                    });
+                }
+            });
             navigate("/Tabeldata");
             setData(data.filter((item) => item.id !== id));
         } catch (err) {

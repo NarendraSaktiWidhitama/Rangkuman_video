@@ -4,7 +4,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 
-function Tambahdata() {
+function Tambahmenu() {
     const [formData, setFormData] = useState({
             makanan: "",
             paket: "",
@@ -31,12 +31,12 @@ function Tambahdata() {
             });
 
             setFormData({
-                nama: "",
-                email: "",
-                jurusan: "",
+                makanan: "",
+                paket: "",
+                harga: "",
             });
 
-            navigate("/tabeldata");
+            navigate("/tabelmenu");
         } catch (error) {
             console.error("Error saat menambahkan data:", error);
             Swal.fire({
@@ -53,17 +53,17 @@ function Tambahdata() {
     return (
         <div className="flex items-center justify-center min-h-screen bg-linear-to-r from-cyan-500 to-blue-500 ml-60">
             <div className="bg-amber-50 p-8 rounded-lg shadow-md w-full max-w-sm">
-                <h1 className="text-2xl font-bold text-center mb-6">Tambah Data</h1>
+                <h1 className="text-2xl font-bold text-center mb-6">Tambah Menu</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="Makanan">
-                            Nama
+                            Makanan
                         </label>
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="Nama"
+                            id="Makanan"
                             type="text"
-                            name="Nama"
+                            name="Makanan"
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Masukan menu makanan anda"
@@ -72,13 +72,13 @@ function Tambahdata() {
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="Minuman">
-                            Email
+                            Minuman
                         </label>
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="Email"
-                            type="Email"
-                            name="Email"
+                            id="Minuman"
+                            type="Minuman"
+                            name="Minuman"
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Masukan menu minuman anda"
@@ -87,13 +87,13 @@ function Tambahdata() {
                     </div>
                     <div className="mb-6">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="harga">
-                            Jurusan
+                            harga
                         </label>
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="Jurusan"
-                            type="Jurusan"
-                            name="Jurusan"
+                            id="harga"
+                            type="harga"
+                            name="harga"
                             value={formData.password}
                             onChange={handleChange}
                             placeholder="total harga"
@@ -119,4 +119,4 @@ function Tambahdata() {
     );
 }
 
-export default Tambahdata;
+export default Tambahmenu;

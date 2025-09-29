@@ -45,7 +45,7 @@ function Editdata() {
                 icon: "berhasil",
                 draggable: true
             });
-                navigate("/tabeldata")
+                navigate("/Tabeldata")
         } catch (err) {
             console.error("Gagal mengupdate data:", err);
             alert("Gagal mengupdate data!");
@@ -55,9 +55,9 @@ function Editdata() {
     if (loading) return <p className="text-center mt-10">Loading data</p>
     
     return (
-                <div className="flex items-center justify-center min-h-screen bg-linear-to-r from-cyan-500 to-orange-500 ml-60">
+                <div className="flex items-center justify-center min-h-screen bg-linear-to-r ml-60">
             <div className="bg-amber-50 p-8 rounded-lg shadow-md w-full max-w-sm">
-                <h1 className="text-2xl font-bold text-center mb-6">Edit Data Menu</h1>
+                <h1 className="text-2xl font-bold text-center mb-6">Edit Menu</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="Makanan">

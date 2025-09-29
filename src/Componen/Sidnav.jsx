@@ -10,14 +10,22 @@ const Sidnav = () => {
             <nav className='space-y-3 pt-8'>
                 <a href="/Dashboard"
                  className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Home</a>
+                 <a href="/Profile"
+                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Profile</a>
                 <a href="/Tambahdata"
                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Tambahdata</a>
+                <a href="/Tambahmenu"
+                className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Tambahmenu</a>
                 <a href="/tabeldata" 
                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Tabeldata</a>
+                <a href="/tabelmenu" 
+                className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Tabelmenu</a>
                 <a href="/Editdata/:id" 
+                className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Editmenu</a>
+                <a href="/Editmenu/:id" 
                 className='block py-2 px-3 rounded hover:bg-blue-600 focus:shadow-outline text-white font-bold text-center'>Editdata</a>
-                <div className='pt-70'>
-                <a href="/Editdata/:id" 
+                <div className='pt-35'>
+                <a href="/LOGIN" 
                 className='block py-2 px-3 rounded hover:bg-red-600 focus:shadow-outline text-white font-bold text-center'>LogOut</a>
                 </div>
             </nav>

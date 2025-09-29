@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-function TabelData() {
+function Tabelmenu() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
@@ -46,7 +46,7 @@ function TabelData() {
                     });
                 }
             });
-            navigate("/Tabeldata");
+            navigate("/Tabelmenu");
             setData(data.filter((item) => item.id !== id));
         } catch (err) {
             console.error("Gagal menghapus data:", err);
@@ -56,19 +56,17 @@ function TabelData() {
 
     return (
         <>
-
         <div className="ml-65">
-            <h1 className="text-3xl font-bold">Tabel Data</h1>
+            <h1 className="text-3xl font-bold">Tabel Menu</h1>
         </div>
-
             <table className="border-separate border border-gray-400 w-250 m-50 mx-75">
                 <thead>
                     <tr>
                         <th className="border border-gray-300">No</th>
-                        <th className="border border-gray-300">Nama</th>
-                        <th className="border border-gray-300">Email</th>
-                        <th className="border border-gray-300">Jurusan</th>
-                        <th className="border border-gray-300">Angkatan</th>
+                        <th className="border border-gray-300">Makanan</th>
+                        <th className="border border-gray-300">Paket</th>
+                        <th className="border border-gray-300">Harga</th>
+                        <th className="border border-gray-300">Aksi</th>
                     </tr>
                 </thead>
 
@@ -76,11 +74,11 @@ function TabelData() {
                     {data.length > 0 ? (data.map((item, index) => (
                         <tr key={item.id}>
                             <td className="border border-gray-300">{index + 1}</td>
-                            <td className="border border-gray-300">{item.nama}</td>
-                            <td className="border border-gray-300">{item.email}</td>
-                            <td className="border border-gray-300">{item.jurusan}</td>
+                            <td className="border border-gray-300">{item.makanan}</td>
+                            <td className="border border-gray-300">{item.paket}</td>
+                            <td className="border border-gray-300">{item.harga}</td>
                                 <button
-                                    onClick={() => navigate(`/Editmenu/${item.id }`)}
+                                    onClick={() => navigate(`/Editdata/${item.id }`)}
                                     className="bg-gray-700 text-white px-3 py-1 rounded-md hover:bg-gray-500"
                                 >
                                     editt
@@ -105,4 +103,4 @@ function TabelData() {
         </>
     );
 }
-export default TabelData;
+export default Tabelmenu;

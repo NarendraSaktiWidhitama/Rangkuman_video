@@ -45,7 +45,7 @@ function Editmenu() {
                 icon: "berhasil",
                 draggable: true
             });
-                navigate("/Tabelmenu")
+                navigate("/Tabeldata")
         } catch (err) {
             console.error("Gagal mengupdate data:", err);
             alert("Gagal mengupdate data!");
@@ -70,7 +70,7 @@ function Editmenu() {
                             name="nama"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="Masukan menu makanan anda"
+                            placeholder="Masukan nama anda"
                             required
                         />
                     </div>
@@ -85,7 +85,7 @@ function Editmenu() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="Masukan menu minuman anda"
+                            placeholder="Masukan email anda"
                             required
                         />
                     </div>
@@ -95,12 +95,12 @@ function Editmenu() {
                         </label>
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="jurusan"
-                            type="jurusan"
-                            name="jurusam"
+                            id="Jurusan"
+                            type="Jurusan"
+                            name="Jurusam"
                             value={formData.password}
                             onChange={handleChange}
-                            placeholder="total harga"
+                            placeholder="jurusan"
                             required
                         />
                     </div>

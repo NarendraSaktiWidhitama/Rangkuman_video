@@ -8,7 +8,7 @@ import TabelData from "./pages/Tabeldata";
 import Tabelmenu from "./pages/Tabelmenu";
 import Editdata from "./pages/Editdata";
 import Editmenu from "./pages/Editmenu";
-import Sidnav from "./Componen/sidnav";
+import Sidnav from "./Componen/Sidnav";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./Componen/Profile";
 
@@ -19,8 +19,8 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Profile />} />
-        <Route path="/RegisterPage" element={<Register />} />
         <Route path="/home" element={<Tabeltailwind />} />
+        {/* <Route path="/RegisterPage" element={<Register />} /> */}
         <Route path="/Tambahdata" element={<Tambahdata />} />
         <Route path="/Tambahmenu" element={<Tambahmenu />} />
         <Route path="/Tabeldata" element={<TabelData />} />

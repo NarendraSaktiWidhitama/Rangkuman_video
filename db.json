@@ -15,41 +15,6 @@
   ],
   "menu": [
     {
-      "id": "ef98",
-      "makanan": "",
-      "paket": "",
-      "harga": "",
-      "Nama": "Darren sefthiros",
-      "Email": "seft@gmail.com",
-      "Jurusan": "Tkj"
-    },
-    {
-      "id": "bfc9",
-      "makanan": "",
-      "paket": "",
-      "harga": "",
-      "Nama": "Darren sefthiros",
-      "Email": "seft@gmail.com",
-      "Jurusan": "Tkj"
-    },
-    {
-      "id": "3123",
-      "makanan": "",
-      "paket": "",
-      "harga": "",
-      "Nama": "Darren sefthiros",
-      "Email": "seft@gmail.com",
-      "Jurusan": "Tkj"
-    },
-    {
-      "id": "d081",
-      "makanan": "",
-      "paket": "",
-      "harga": "30.000",
-      "Makanan": "Nasi goreng",
-      "Minuman": "es coklat"
-    },
-    {
       "id": "7a85",
       "makanan": "",
       "paket": "",
@@ -129,6 +94,54 @@
       "harga": "10.000",
       "Makanan": "roti isi kepala",
       "Minuman": "es coklat"
+    },
+    {
+      "id": "6974",
+      "makanan": "",
+      "paket": "",
+      "harga": "",
+      "Nama": "REZA",
+      "Email": "sasageo@gmail.com",
+      "Jurusan": "PPLG",
+      "nama": "REZA",
+      "email": "sasageo@gmail.com",
+      "jurusam": "DKV"
+    },
+    {
+      "id": "ecc3",
+      "makanan": "",
+      "paket": "",
+      "harga": "",
+      "Nama": "REZA",
+      "Email": "sasageo@gmail.com",
+      "Jurusan": "PPLG",
+      "nama": "REZA",
+      "email": "sasageo@gmail.com",
+      "jurusam": "DKV"
+    },
+    {
+      "id": "fbab",
+      "makanan": "",
+      "paket": "",
+      "harga": "",
+      "Nama": "REZA",
+      "Email": "sasageo@gmail.com",
+      "Jurusan": "PPLG",
+      "nama": "REZA",
+      "email": "sasageo@gmail.com",
+      "jurusam": "OTOMOTIF"
+    },
+    {
+      "id": "29f9",
+      "makanan": "",
+      "paket": "",
+      "harga": "",
+      "Nama": "REZA",
+      "Email": "sasageo@gmail.com",
+      "Jurusan": "PPLG",
+      "nama": "REZA",
+      "email": "sasageo@gmail.com",
+      "Jurusam": "OTOMOTIF"
     }
   ]
 }

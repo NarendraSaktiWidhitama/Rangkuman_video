@@ -39,9 +39,9 @@ function Register() {
   };
 
   return (
-    <div className="flex item-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-100 h-100 max-w-sn mt-30">
-        <h1 className="text-2x1 font-bold text-center mb-6">Login</h1>
+    <div className="flex items-center justify-center min-h-screen bg-linear-to-r from-cyan-500 ml-60">
+      <div className="bg-amber-50 p-8 rounded-lg shadow-md w-full max-w-sm">
+        <h1 className="text-2x1 font-bold text-center mb-6">Masukan akun</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label

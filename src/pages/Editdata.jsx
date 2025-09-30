@@ -45,7 +45,7 @@ function Editdata() {
                 icon: "berhasil",
                 draggable: true
             });
-                navigate("/Tabeldata")
+                navigate("/Tabelmenu")
         } catch (err) {
             console.error("Gagal mengupdate data:", err);
             alert("Gagal mengupdate data!");
